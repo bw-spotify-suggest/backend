@@ -8,6 +8,8 @@ jupyter = "*"
 numpy = "*"
 pandas = "*"
 sklearn = "*"
+requests = "*"
+spotipy = "*"
 
 [dev-packages]
 
