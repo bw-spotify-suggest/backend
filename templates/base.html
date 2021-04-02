@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta chartset="UTF-8">
+    <title>Predict Song Suggestions</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style.css') }}">
+
+</head>
+
+
+<body>
+<div class="login">
+    <h1>Pick a Song!</h1>
+
+    <form action="/get_song" method="post">
+        <input type="text" name="song_request" placeholder="Enter the song to pull data from">
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
