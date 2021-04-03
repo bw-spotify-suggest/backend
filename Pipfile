@@ -10,6 +10,10 @@ pandas = "*"
 sklearn = "*"
 requests = "*"
 spotipy = "*"
+flask = "*"
+gunicorn = "*"
+python-dotenv = "*"
+matplotlib = "*"
 
 [dev-packages]
 
