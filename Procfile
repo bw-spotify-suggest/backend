@@ -1,1 +1,1 @@
-web: gunicorn spot:app.py -t 100
+web: gunicorn -t 100
