@@ -11,8 +11,6 @@ import numpy as np
 import base64
 import json
 
-APP = Flask(__name__)
-
 @APP.route("/")
 def root():
     return render_template("base.html")
@@ -50,6 +48,3 @@ def get_song():
 
     return render_template("get_song.html", song_request=song_id,
                                             names_list=names, energy_list=energy, speech_list=speech, dance_list=dance, table_contents=array, our_json=our_json)
-
-if __name__ == '__main__':
-    APP.run()
