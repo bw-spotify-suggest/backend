@@ -11,12 +11,19 @@ import numpy as np
 import base64
 import json
 
+
 @APP.route("/")
 def root():
+    """Redirects to home"""
+    return redirect("/home")
+
+
+@APP.route("/home", methods=["POST", "GET"])
+def home():
     return render_template("base.html")
 
 
-@APP.route("/get_song", methods=["POST"])
+@APP.route("/get_song", methods=["POST", "GET"])
 def get_song():
     array = []
     data = pd.read_csv("spot/Data/spotify2021.csv")
